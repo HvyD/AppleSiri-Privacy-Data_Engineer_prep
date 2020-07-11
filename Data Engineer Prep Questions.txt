@@ -1,0 +1,82 @@
+
+
+Compare Spark and Hadoop, list reasons and examples why Spark would outperform Hadoop
+They are both software frameworks that process and store bigdata.
+Hadoop is Disk based for storage and processing which can be slow and only used for batch processing
+Spark uses in memory processing for Big data which makes it fast and can be used for both batch and streaming processing
+Spark is easier to use since you can use multiple Languages and APi. Haddoop you are stuck with Java or Python with MapReduce.
+List some use cases where Spark outperforms Hadoop in processing.
+Sensor Data Processing Apache Spark In-memory computing works best here, as data is retrieved and combined from different sources.
+Spark is preferred over Hadoop for real time querying of data
+Stream Processing For processing logs and detecting frauds in live streams for alerts, Apache Spark is the best solution.
+
+
+What is the difference between repartition and coalesce?
+coalesce uses existing data to make decreased uneven partitions, repartition makes new equal sized partitions. repartition in expensive and slow but the data is easier accessible.
+
+How would you check a JVM run time for stats on which methods are taking the longest to run?
+Use JVM Tools:
+JPS, JSTAT
+
+System.nanoTime();
+
+\\\long max 2^63 , min - -2^63
+long startTime = System.nanoTime();
+
+static void myMethod() {
+    System.out.println("Hello World");
+  }
+
+long endTime = System.nanoTime();
+System.out.println("Took "+(endTime - startTime) + " ns");
+
+
+How would you use Unix tools to check stats of running processes?
+Use ps -aux or sudo ps -a  and pipe more/less and grep
+
+
+What is the role of the partition key within Kafka?
+Kafka uses the key of the message to select the partition of the topic it writes to.
+
+Before you send a message you have to give it a key to tell it where to go, what is the purpose of the key?
+Keys are used to determine the partition within a log to which a message get's appended to. While the value is the actual payload of the message.
+
+
+What is the method you can use in Kafka to tell it to process it's value?
+map
+
+
+What happens internally if you don't give Kafka a key?
+It will randomly partition using a round robin
+
+
+How would you performance tune a Spark application to make it run more efficiently?
+1.	within the code, Broadcast variables to reduce overhead and transform partition not rows
+2.	Java or Kyra Data Serialization
+3.	Memory management and tuning – Data Structure and JVM Garbage Collection
+
+How would you ensure that users have access to the correct data?
+Set Access Roles
+
+How can Spark be connected to Apache Mesos
+Spark Binary package set up for Meso and Spark Driver configured to run Meso
+Spark. Conf( .setmaster(URL:Port)
+OR
+Install Spark In the same location of the Meso slaves then configure spark.meso.executor.home to point to that location.
+
+From a scaling perspective, if you have hundreds of users on the cluster, how do you guarantee good performance?
+Having dedicated ques, disabling preemption on those ques so users get good performance.
+
+Q: Explain the Big O theory
+A: Big O theory in short is how complex the code and how long it takes to run the solution. Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity.
+
+Q: This team runs privacy infrastructure. If user asks to delete their data on HDFS, how would you find the right data in hundreds of petabytes of data?
+A: HDFS an append file system, you cannot go into the file and delete specific portions of the file. Must read all of HDFS data/filter it and write back out with all of the data removed.
+Follow up Q:How could you optimize that process?
+A1: Store THE DATA in most efficient format possible Parquet
+A2: Can use advanced delta storage units Apache Iceberg /Delta Lake/ Apache Hudi
+
+Q: Explain about the different cluster managers in Apache Spark
+Standalone cluster manager is a simple cluster manager that comes included with the Spark.
+Hadoop YARN, a distributed computing framework for job scheduling and cluster resource management,
+Apache Mesos - Apache Mesos is a cluster manager that can also run Hadoop MapReduce and service applications.
