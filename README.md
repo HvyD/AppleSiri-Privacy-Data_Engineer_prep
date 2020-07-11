@@ -10,12 +10,12 @@ I only had time afterwards to be ask: <br>
 
 
 * Second Round was with another Engineer. I was asked to write a Multi-Threaded Scheduler. They wanted to see how you check the queue and put in a delay. <br>
-        1. How would you check a JVM run time for stats on which methods are taking the longest to run?
-        2. How would you performance tune a Spark application to make it run more efficiently?
-        3.  Explain the Big O theory
-        4. Compare Spark and Hadoop, list reasons and examples why Spark would outperform Hadoop
+        1. How would you check a JVM run time for stats on which methods are taking the longest to run? <br>
+        2. How would you performance tune a Spark application to make it run more efficiently? <br>
+        3.  Explain the Big O theory <br>
+        4. Compare Spark and Hadoop, list reasons and examples why Spark would outperform Hadoop <br>
 
-        
+
 
 * Third and final was with Hiring manager. I was asked only one coding question of how to Count Distinct Elements in an array. Then make it absolutely efficient, them describe and write out how it would scale for big data.
 
