@@ -9,7 +9,7 @@ I only had time afterwards to be ask: <br>
 
 
 
-* Second Round was with another Engineer. I was asked to write a Multi-Threaded Scheduler. They wanted to see how you check the queue and put in a delay. <br>
+* Second Round was with another Engineer. I was asked to write a Multi-Threaded Scheduler. They wanted to see how you check the queue and put in a delay. Then how it would run an API for a client. <br>
         1. How would you check a JVM run time for stats on which methods are taking the longest to run? <br>
         2. How would you performance tune a Spark application to make it run more efficiently? <br>
         3.  Explain the Big O theory <br>
