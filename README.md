@@ -3,7 +3,7 @@
 ## Three Separate Rounds Total via WebEx - All technical. Not a single behavioral question was ask or for that matter my experiences and education. Just straight into Data Structures and Algorithms. DS&A is good for interviewing but in my decades of experience there is a vast difference in day to day operations. Another Flawed hiring practice, imho.
 
 
-* First round with engineer was ask to find the Minimum Window Substring coding question and To return a True Shuffle of an Array Coding question.
+* First round with engineer was ask to find the **[ Minimum Window Substring coding question](https://github.com/HvyD/AppleSiri-Privacy-Data_Engineer_prep/blob/master/Minimum%20Window%20Substring.py)** and To return a **[ True Shuffle of an Array Coding ](https://github.com/HvyD/AppleSiri-Privacy-Data_Engineer_prep/blob/master/shuffle_array.py)**.
 I only had time afterwards to be ask: <br>
         1. What is the difference between repartition and coalesce?
 
