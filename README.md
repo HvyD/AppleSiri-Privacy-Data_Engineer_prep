@@ -20,4 +20,4 @@ I only had time afterwards to be ask: <br>
 * Third and final was with Hiring manager. I was asked only one coding question of how to **[ Count Distinct Elements in an array ](https://github.com/HvyD/AppleSiri-Privacy-Data_Engineer_prep/blob/master/Count_Distinct_ELements_in_an_Array.py)** Then make it absolutely efficient. Finally shuffle/split across Three Clusters.
 
 
-### I have provided all my Solutions I came up with of All Coding and verbal questions actually asked during interview plus a few LeetCode practice and additional verbal questions I felt could have been ask of me.
+### I have provided all my Solutions I came up with of All Coding and verbal questions actually asked during interview plus a few LeetCode practice and additional verbal questions I felt could have been asked of me.
